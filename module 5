@@ -1,0 +1,44 @@
+#Azlyn Hernandez
+#10/28/24
+#These are different codes for module 5
+
+#problem #1
+#This code print out hello world 100 times.
+for i in range(100):
+    print("Hello World")
+
+#problem #2
+#This part oif problem number 2 just lists the numbers underneath
+for item in [12, 10,32, 3, 66, 17, 42, 99, 20]:
+    print("item:", item)
+#problem 2 pt 2
+#This code square roots each number in the list
+for item in [12, 10,32, 3, 66, 17, 42, 99, 20]:
+    print("item square:", item**item)
+
+#problem 4
+#This code
+for i in range(1,50):
+    if 1% 3 == 0 and i % 5 == 0:
+        print(i, "is divisible by both 3 and 5")
+    elif i % 3 == 0:
+        print(i, "is divisible by three")
+    elif i % 5 == 0:
+        print(i, "is divisible by five")
+
+#problem 5
+#This code can create a white square
+import turtle
+
+my_turtle = turtle.Turtle()
+window = turtle.Screen()
+window.bgcolor('skyblue')
+
+my_turtle.fillcolor('white')
+my_turtle.begin_fill()
+for i in range(2):
+    my_turtle.forward(100)
+    my_turtle.left(90)
+    my_turtle.forward(150)
+    my_turtle.left(90)
+my_turtle.end_fill()
